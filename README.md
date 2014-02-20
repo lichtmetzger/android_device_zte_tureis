@@ -38,13 +38,13 @@ For stripping down the build I removed these applications:
 
 vendor/cm/config:
 
-Trebuchet, LockClock, MagicSmokeWallpapers, NoiseField, PhaseBeam, VisualizationWallpapers, PhotoTable, Galaxy4, HoloSpiralWallpaper
-LiveWallpapers, Development, vendor/cm/overlay/dictionaries, WhisperPush, LiveWallpapersPicker, DSPManager, libcyanogen-dsp, audio_effects.conf
-VoicePlus, VoiceDialer, CMAccount, Apollo, CMFileManager, SoundRecorder, Basic, CMUpdater, CMFota, e2fsck, mke2fs, tune2fs, mount.exfat
-fsck.exfat, mkfs.exfat, ntfsfix, ntfs-3g
+    Trebuchet, LockClock, MagicSmokeWallpapers, NoiseField, PhaseBeam, VisualizationWallpapers, PhotoTable, Galaxy4, HoloSpiralWallpaper
+    LiveWallpapers, Development, vendor/cm/overlay/dictionaries, WhisperPush, LiveWallpapersPicker, DSPManager, libcyanogen-dsp, audio_effects.conf
+    VoicePlus, VoiceDialer, CMAccount, Apollo, CMFileManager, SoundRecorder, Basic, CMUpdater, CMFota, e2fsck, mke2fs, tune2fs, mount.exfat
+    fsck.exfat, mkfs.exfat, ntfsfix, ntfs-3g
 
-# Extra Ringtones
-include frameworks/base/data/sounds/AudioPackageNewWave.mk
+Extra Ringtones
+    include frameworks/base/data/sounds/AudioPackageNewWave.mk
 
 
 /build/target/product:
@@ -67,6 +67,7 @@ generic_no_telephony.mk
     Email2 \
 
 full_base_telephony.mk
+
     VoiceDialer
 
 Have fun with this sucker :)
