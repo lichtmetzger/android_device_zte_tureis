@@ -43,7 +43,8 @@ vendor/cm/config:
     VoicePlus, VoiceDialer, CMAccount, Apollo, CMFileManager, SoundRecorder, Basic, CMUpdater, CMFota, e2fsck, mke2fs, tune2fs, mount.exfat
     fsck.exfat, mkfs.exfat, ntfsfix, ntfs-3g
 
-Extra Ringtones
+    
+    #Extra Ringtones
     include frameworks/base/data/sounds/AudioPackageNewWave.mk
 
 
