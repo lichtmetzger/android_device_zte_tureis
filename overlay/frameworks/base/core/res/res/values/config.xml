@@ -75,6 +75,9 @@
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">true</bool>
+    
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">true</bool>
 
     <!-- Timeout in MS for how long you have to long-press the back key to
          kill the foreground app. -->

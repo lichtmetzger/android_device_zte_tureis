@@ -25,6 +25,7 @@ USE_CAMERA_STUB := true
 TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi
 TARGET_CPU_ABI2 := armeabi-v6l
+TARGET_CPU_VARIANT := arm11
 TARGET_ARCH_VARIANT := armv6-vfp
 
 # Target and board properties
@@ -40,7 +41,7 @@ BOARD_LDPI_RECOVERY := true
 
 # Recovery
 TARGET_RECOVERY_INITRC := device/zte/tureis/recovery/recovery.rc
-TARGET_RECOVERY_FSTAB := device/zte/tureis/recovery/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/zte/tureis/ramdisk/fstab.tureis
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/zte/tureis/recovery/recovery_keys.c
 TARGET_PREBUILT_RECOVERY_KERNEL := device/zte/tureis/recovery/recovery_kernel
@@ -80,14 +81,18 @@ TARGET_FORCE_CPU_UPLOAD := true
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
-COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_LEGACY_OMX
+COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
 
 # Graphics
 BOARD_EGL_CFG := device/zte/tureis/prebuilt/system/lib/egl/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_QCOM_DISPLAY_VARIANT := legacy
 BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
-COMMON_GLOBAL_CFLAGS += -DQCOM_ICS_COMPAT -DQCOM_NO_SECURE_PLAYBACK
+
+# Video
+TARGET_QCOM_LEGACY_OMX := true
+TARGET_QCOM_MEDIA_VARIANT := legacy
+COMMON_GLOBAL_CFLAGS += -DQCOM_NO_SECURE_PLAYBACK
 
 # Bootanimation
 TARGET_BOOTANIMATION_USE_RGB565 := true
@@ -107,6 +112,9 @@ TARGET_ARCH_LOWMEM := true
 BOARD_USES_STE_FMRADIO := true
 BOARD_HAVE_QCOM_FM := true
 COMMON_GLOBAL_CFLAGS += -DSTE_FM -DQCOM_FM_ENABLED
+
+# Hardware tunables framework
+BOARD_HARDWARE_CLASS := device/zte/blade/cmhw/
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 4194304
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6291456

@@ -20,10 +20,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.tureis
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    brcm_patchram_plus
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -63,7 +59,7 @@ PRODUCT_PACKAGES += \
     gps.tureis \
     librpc
 
-#Screen is too small for ads
+# Screen is too small for ads
 PRODUCT_PACKAGES += \
     AdAway
 
@@ -72,6 +68,10 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libOmxCore \
     libstagefrighthw
+
+# Launcher2 Port
+PRODUCT_PACKAGES += \
+    Launcher2
 
 # Ramdisk
 PRODUCT_COPY_FILES += \

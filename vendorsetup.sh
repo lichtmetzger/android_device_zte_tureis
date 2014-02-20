@@ -15,5 +15,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo tureis-userdebug
-add_lunch_combo tureis-eng
+add_lunch_combo cm_tureis-userdebug
