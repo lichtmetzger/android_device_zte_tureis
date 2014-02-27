@@ -64,7 +64,8 @@ generic_no_telephony.mk
     Exchange2 \
     QuickSearchBox \
     Gallery2 \
-    Email \
+    Music \
+    Email2 \
 
 full_base_telephony.mk
 

@@ -42,26 +42,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm7x27
 
-# File Manager
-PRODUCT_PACKAGES += \
-    GhostCommander
-
-#Music App
-PRODUCT_PACKAGES += \
-    Music
-
-#Camera
-PRODUCT_PACKAGES += \
-    QuickSnap
-
 # GPS
 PRODUCT_PACKAGES += \
     gps.tureis \
     librpc
-
-# Screen is too small for ads
-PRODUCT_PACKAGES += \
-    AdAway
 
 # Video
 PRODUCT_PACKAGES += \
@@ -69,9 +53,15 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libstagefrighthw
 
-# Launcher2 Port
+#ROM-specific applications
 PRODUCT_PACKAGES += \
-    Launcher2
+    Launcher2 \
+    AdAway \
+    QuickSnap \
+    Music \
+    TotalCommander \
+    Lightning
+
 
 # Ramdisk
 PRODUCT_COPY_FILES += \

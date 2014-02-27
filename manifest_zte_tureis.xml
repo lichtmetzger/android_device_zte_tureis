@@ -4,7 +4,4 @@
     <project path="device/zte/tureis" name="schmatzler/android_device_zte_tureis" revision="master" />
     <project path="kernel/zte/zte-kernel-msm7x27" name="schmatzler/zte-kernel-tureis" revision="master" />
     <project path="vendor/zte/tureis" name="schmatzler/android_vendor_zte_tureis" revision="master" />
-
-    <!-- FM Radio -->
-    <project path="packages/apps/Effem" name="legaCyMod/android_packages_apps_Effem" revision="master" />
 </manifest>

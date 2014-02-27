@@ -1,3 +1,14 @@
 #!/system/bin/sh
-#Activate swap at boot 
-swapon /dev/block/mmcblk0p2 
+#Set swap at boot on most common partition layouts.
+#Extra vm settings available
+
+if [ -e /dev/block/mmcblk0p2 ];
+then
+swapon /dev/block/mmcblk0p2;
+sysctl -w vm.swappiness=60
+fi;
+if [ -e /dev/block/mmcblk0p3 ];
+then
+swapon /dev/block/mmcblk0p3;
+sysctl -w vm.swappiness=60
+fi;
