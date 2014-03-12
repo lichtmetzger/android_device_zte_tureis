@@ -9,7 +9,7 @@
     <dimen name="password_keyboard_verticalGap">2dip</dimen>
     <dimen name="keyguard_lockscreen_outerring_diameter">100.0dip</dimen>
     <dimen name="glowpadview_target_placement_radius">85.0dip</dimen>
-    <dimen name="keyguard_lockscreen_clock_font_size">20dip</dimen>
+    <dimen name="keyguard_lockscreen_clock_font_size">55dip</dimen>
     <dimen name="keyguard_lockscreen_status_line_font_size">14dip</dimen>
     <dimen name="keyguard_lockscreen_status_line_clockfont_top_margin">1dip</dimen>
     <dimen name="keyguard_lockscreen_status_line_clockfont_bottom_margin">1dip</dimen>

@@ -16,6 +16,7 @@
 #History:
 #when       who         what, where, why
 #--------   ----        ------------------------------
+#2014 	    schmatzler	replaced dpad-center with enter
 #2010-09-08 liwei       new file for turies board , ZTE_KEYPAD_LIWEI_20100908
 ##########################################
 
@@ -75,7 +76,7 @@ key     127         SYM
 key     139         MENU        WAKE_DROPPED
 key     158         BACK        WAKE_DROPPED
 key     217         SEARCH
-key     352         DPAD_CENTER
+key     352         ENTER
 key     464         ALT_LEFT     
 
 key     231         CALL        WAKE_DROPPED

@@ -40,7 +40,7 @@ vendor/cm/config:
 
     Trebuchet, LockClock, MagicSmokeWallpapers, NoiseField, PhaseBeam, VisualizationWallpapers, PhotoTable, Galaxy4, HoloSpiralWallpaper
     LiveWallpapers, Development, vendor/cm/overlay/dictionaries, WhisperPush, LiveWallpapersPicker, DSPManager, libcyanogen-dsp, audio_effects.conf
-    VoicePlus, VoiceDialer, CMAccount, Apollo, CMFileManager, SoundRecorder, Basic, CMUpdater, CMFota, e2fsck, mke2fs, tune2fs, mount.exfat
+    VoicePlus, VoiceDialer, Apollo, CMFileManager, SoundRecorder, Basic, CMUpdater, CMFota, e2fsck, mke2fs, tune2fs, mount.exfat
     fsck.exfat, mkfs.exfat, ntfsfix, ntfs-3g
 
     
